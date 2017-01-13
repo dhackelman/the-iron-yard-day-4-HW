@@ -1,0 +1,89 @@
+.shirt-store {
+  font-family: Geneva;
+  height: 500px;
+  overflow: hidden;
+}
+
+.shirt-container {
+  height: 400px;
+  margin: 20px auto;
+  padding: 2%;
+  width: 30%;
+}
+
+.shirt-canvas {
+  background: white;
+  border: 2px solid #74bdea;
+  height: 88%;
+  margin-bottom: 0;
+  position: relative;
+  width: 96%;
+}
+
+.shirt-canvas img {
+  left: 4%;
+  height: 90%;
+  width: 90%;
+  margin: 2% auto;
+  position: absolute;
+
+
+}
+
+.shirt-menu {
+  background: #fff;
+  height:13%;
+  margin: auto;
+  margin-top: -1%;
+  overflow: hidden;
+  width: 99%;
+}
+
+.icon {
+  border: 2px solid #74bdea;
+  color: #74bdea;
+  float: left;
+  font-weight: bold;
+  height: 100%;
+  margin-right: -1%;
+  text-align: center;
+  width: 20%;
+}
+
+.icon:nth-child(-n+2):hover {
+  background-color: #74bdea;
+  color: white;
+}
+.icon:nth-child(5):hover {
+  background-color: #74bdea;
+  color: white;
+}
+
+.icon:nth-child(4):hover{
+  
+}
+
+
+i {
+  padding-top: 10px;
+
+}
+
+.shirt-info {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.shirt-info span:first-child {
+  float: left;
+  color: #74bdea;
+  margin-top: 2%;
+}
+.shirt-info span:last-child {
+  float: right;
+  color: #74bdea;
+  margin-top: 2%;
+  margin-right: 5%;
+  font-weight: bold;
+}
