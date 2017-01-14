@@ -8,6 +8,7 @@
   height: 400px;
   margin: 20px auto;
   padding: 2%;
+  position: relative;
   width: 30%;
 }
 
@@ -16,6 +17,7 @@
   border: 2px solid #74bdea;
   height: 88%;
   margin-bottom: 0;
+  /*overflow: hidden;*/
   position: relative;
   width: 96%;
 }
@@ -26,8 +28,102 @@
   width: 90%;
   margin: 2% auto;
   position: absolute;
+}
+
+.flip-box {
+  background: white;
+  border: 2px solid #74bdea;
+  color: #74bdea;
+  float: right;
+  height: 7%;
+  margin-top: -.5%;
+  margin-right: -.5%;
+  text-align: center;
+  width: 7%;
+}
+
+.flip-box i {
+  padding: 0;
+}
 
 
+.arrow_box {
+	position: relative;
+  top: 80%;
+  right: 17%;
+  float: right;
+	background: #fff;
+	border: 2px solid #74bdea;
+  height: 20%;
+  width: 15%;
+  opacity: 1;
+}
+
+
+
+.arrow_box:after, .arrow_box:before {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-top-color: #fff;
+	border-width: 15px;
+	margin-left: -15px;
+  position: absolute;;
+  z-index: 100;
+}
+
+.arrow_box:before {
+	border-color: rgba(116, 189, 234, 0);
+	border-top-color: #74bdea;
+	border-width: 18px;
+	margin-left: -18px;
+}
+
+.arrow_box2 {
+	position: relative;
+  left: 42%;
+  top: 80%;
+  float: left;
+	background: #fff;
+	border: 2px solid #74bdea;
+  height: 20%;
+  width: 15%;
+}
+
+.arrow_box2:after, .arrow_box2:before {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box2:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-top-color: #fff;
+	border-width: 15px;
+	margin-left: -15px;
+  position: absolute;;
+  z-index: 100;
+}
+
+.arrow_box2:before {
+	border-color: rgba(116, 189, 234, 0);
+	border-top-color: #74bdea;
+	border-width: 18px;
+	margin-left: -18px;
 }
 
 .shirt-menu {
@@ -50,6 +146,11 @@
   width: 20%;
 }
 
+.xl {
+  color: #74bdea;
+  text-align: center;
+}
+
 .icon:nth-child(-n+2):hover {
   background-color: #74bdea;
   color: white;
@@ -57,10 +158,6 @@
 .icon:nth-child(5):hover {
   background-color: #74bdea;
   color: white;
-}
-
-.icon:nth-child(4):hover{
-  
 }
 
 
