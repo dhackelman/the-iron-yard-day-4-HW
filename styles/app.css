@@ -25,9 +25,9 @@
 .shirt-canvas img {
   left: 4%;
   height: 90%;
-  width: 90%;
   margin: 2% auto;
   position: absolute;
+  width: 90%;
 }
 
 .flip-box {
@@ -51,29 +51,28 @@
   color: white;
 }
 
-
 .arrow_box {
-	position: relative;
-  float: right;
 	background: #fff;
 	border: 2px solid #74bdea;
+  float: right;
   height: 150%;
   margin: 0 auto;
+  opacity: 0;
+  position: relative;
   top: -280%;
   width: 110%;
-  opacity: 0;
   z-index: 10;
 }
 
 .arrow_box:after, .arrow_box:before {
-	top: 100%;
-	left: 50%;
 	border: solid transparent;
 	content: " ";
 	height: 0;
-	width: 0;
-	position: absolute;
+  left: 50%;
+  position: absolute;
 	pointer-events: none;
+  top: 100%;
+  width: 0;
 }
 
 .arrow_box:after {
@@ -81,8 +80,7 @@
 	border-top-color: #fff;
 	border-width: 15px;
 	margin-left: -15px;
-  position: absolute;;
-  z-index: 100;
+  position: absolute;
 }
 
 .arrow_box:before {
@@ -92,27 +90,25 @@
 	margin-left: -18px;
 }
 
-
 #blue {
-  text-align: left;
   color: blue;
+  text-align: left;
 }
 
 #orange {
-  text-align: left;
   color: orange;
+  text-align: left;
 }
 
 #pink {
-  text-align: right;
   color: pink;
+  text-align: right;
 }
 
 #green {
-  text-align: right;
   color: green;
+  text-align: right;
 }
-
 
 .arrow_box2 {
 	position: relative;
@@ -176,7 +172,7 @@
   font-weight: bold;
   height: 100%;
   margin-right: -1%;
-  overflow: visible;
+  /*overflow: hidden;*/
   text-align: center;
   width: 20%;
 }
@@ -186,41 +182,38 @@
   text-align: center;
 }
 
-.icon:nth-child(-n+2):hover {
+.icon:nth-child(-n+5):hover {
   background-color: #74bdea;
   color: white;
 }
-.icon:nth-child(5):hover {
-  background-color: #74bdea;
-  color: white;
-}
+
 .icon:nth-child(4):hover > .arrow_box{
   opacity: 1;
 }
+
 .icon:nth-child(3):hover > .arrow_box2{
   opacity: 1;
 }
 
-
 i {
   padding-top: 10px;
-
 }
 
 .shirt-info {
-  width: 100%;
   margin: 0 auto;
   overflow: hidden;
+  width: 100%;
 }
 
 .shirt-info span:first-child {
-  float: left;
   color: #74bdea;
+  float: left;
   margin-top: 2%;
 }
+
 .shirt-info span:last-child {
-  float: right;
   color: #74bdea;
+  float: right;
   margin-top: 2%;
   margin-right: 5%;
   font-weight: bold;
