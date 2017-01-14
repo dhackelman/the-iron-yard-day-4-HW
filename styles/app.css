@@ -56,13 +56,14 @@
 	border: 2px solid #74bdea;
   float: right;
   height: 150%;
-  margin: 0 auto;
+  margin: 0 -5%;
   opacity: 0;
   position: relative;
-  top: -280%;
+  top: -209%;
   width: 110%;
   z-index: 10;
 }
+
 
 .arrow_box:after, .arrow_box:before {
 	border: solid transparent;
@@ -90,6 +91,7 @@
 	margin-left: -18px;
 }
 
+
 #blue {
   color: blue;
   text-align: left;
@@ -111,17 +113,17 @@
 }
 
 .arrow_box2 {
-	position: relative;
-  float: right;
 	background: #fff;
 	border: 2px solid #74bdea;
+  float: right;
   height: 260%;
-  margin: 0 auto;
-  top: -360%;
-  width: 110%;
+  margin: 0 -5%;
   opacity: 0;
-  z-index: 10;
   padding-top: 2%;
+  position: relative;
+  top: -320%;
+  width: 110%;
+  z-index: 10;
 }
 
 .arrow_box2:after, .arrow_box2:before {
@@ -188,11 +190,34 @@
 }
 
 .icon:nth-child(4):hover > .arrow_box{
+  animation: move .5s ease;
   opacity: 1;
 }
 
+@keyframes move {
+  0% {
+    top: -234%;
+  }
+
+  100% {
+    top: -209%;
+  }
+}
+
+
 .icon:nth-child(3):hover > .arrow_box2{
+  animation: move2 .5s ease;
   opacity: 1;
+}
+
+@keyframes move2 {
+  0% {
+    top: -350%;
+  }
+
+  100% {
+    top: -320%;
+  }
 }
 
 i {
