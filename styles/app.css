@@ -52,10 +52,10 @@
   float: right;
 	background: #fff;
 	border: 2px solid #74bdea;
-  height: 200%;
+  height: 150%;
   margin: 0 auto;
   top: -280%;
-  width: 80%;
+  width: 110%;
   opacity: 0;
   z-index: 10;
 }
@@ -87,17 +87,42 @@
 	margin-left: -18px;
 }
 
+.arrow_box i {
+}
+
+#blue {
+  text-align: left;
+  color: blue;
+}
+
+#orange {
+  text-align: left;
+  color: orange;
+}
+
+#pink {
+  text-align: right;
+  color: pink;
+}
+
+#green {
+  text-align: right;
+  color: green;
+}
+
+
 .arrow_box2 {
 	position: relative;
   float: right;
 	background: #fff;
 	border: 2px solid #74bdea;
-  height: 200%;
+  height: 260%;
   margin: 0 auto;
-  top: -280%;
-  width: 80%;
+  top: -360%;
+  width: 110%;
   opacity: 0;
   z-index: 10;
+  padding-top: 2%;
 }
 
 .arrow_box2:after, .arrow_box2:before {
@@ -127,6 +152,10 @@
 	margin-left: -18px;
 }
 
+.arrow_box2 img {
+  display: block;
+  margin: 10% auto;
+}
 
 .shirt-menu {
   background: #fff;
