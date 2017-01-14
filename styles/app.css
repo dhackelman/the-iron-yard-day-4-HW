@@ -25,7 +25,7 @@
 .shirt-canvas img {
   left: 4%;
   height: 90%;
-  margin: 2% auto;
+  margin: 5% auto;
   position: absolute;
   width: 90%;
 }
@@ -51,6 +51,10 @@
   color: white;
 }
 
+.flip-box:hover ~ .front {
+  opacity: 0;
+}
+
 .arrow_box {
 	background: #fff;
 	border: 2px solid #74bdea;
@@ -63,7 +67,6 @@
   width: 110%;
   z-index: 10;
 }
-
 
 .arrow_box:after, .arrow_box:before {
 	border: solid transparent;
@@ -90,7 +93,6 @@
 	border-width: 18px;
 	margin-left: -18px;
 }
-
 
 #blue {
   color: blue;
@@ -184,7 +186,17 @@
   text-align: center;
 }
 
-.icon:nth-child(-n+5):hover {
+.icon:nth-child(-n+3):hover {
+  background-color: #74bdea;
+  color: white;
+}
+
+.icon:nth-child(5):hover {
+  background-color: #74bdea;
+  color: white;
+}
+
+.icon:nth-child(4):hover {
   background-color: #74bdea;
   color: white;
 }
@@ -197,13 +209,25 @@
 @keyframes move {
   0% {
     top: -234%;
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.3;
+  }
+
+  50% {
+    opacity: 0.6;
+  }
+  75% {
+    opacity: 0.9;
   }
 
   100% {
     top: -209%;
+    opacity: 1;
   }
 }
-
 
 .icon:nth-child(3):hover > .arrow_box2{
   animation: move2 .5s ease;
@@ -213,10 +237,23 @@
 @keyframes move2 {
   0% {
     top: -350%;
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.3;
+  }
+
+  50% {
+    opacity: 0.6;
+  }
+  75% {
+    opacity: 0.9;
   }
 
   100% {
     top: -320%;
+    opacity: 1;
   }
 }
 
