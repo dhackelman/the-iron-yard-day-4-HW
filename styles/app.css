@@ -46,6 +46,11 @@
   padding: 0;
 }
 
+.flip-box:hover {
+  background-color: #74bdea;
+  color: white;
+}
+
 
 .arrow_box {
 	position: relative;
@@ -87,8 +92,6 @@
 	margin-left: -18px;
 }
 
-.arrow_box i {
-}
 
 #blue {
   text-align: left;
