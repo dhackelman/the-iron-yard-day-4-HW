@@ -1,15 +1,16 @@
 .shirt-store {
   font-family: Geneva;
-  height: 500px;
+  min-height: 500px;
+  margin: 0 auto;
   overflow: hidden;
 }
 
 .shirt-container {
-  height: 400px;
-  margin: 20px auto;
+  float: left;
+  height: 375px;
+  margin: 2% auto;
   padding: 2%;
-  position: relative;
-  width: 30%;
+  width: 375px;
 }
 
 .shirt-canvas {
@@ -59,11 +60,11 @@
 	background: #fff;
 	border: 2px solid #74bdea;
   float: right;
-  height: 150%;
+  height: 200%;
   margin: 0 -5%;
   opacity: 0;
   position: relative;
-  top: -209%;
+  top: -275%;
   width: 110%;
   z-index: 10;
 }
@@ -95,22 +96,22 @@
 }
 
 #blue {
-  color: blue;
+  color: #74bdea;
   text-align: left;
 }
 
 #orange {
-  color: orange;
+  color: #ddac69;
   text-align: left;
 }
 
 #pink {
-  color: pink;
+  color: #e16fa3;
   text-align: right;
 }
 
 #green {
-  color: green;
+  color: #a3c1ad;
   text-align: right;
 }
 
@@ -123,7 +124,7 @@
   opacity: 0;
   padding-top: 2%;
   position: relative;
-  top: -320%;
+  top: -338%;
   width: 110%;
   z-index: 10;
 }
@@ -166,7 +167,7 @@
   margin: auto;
   margin-top: -1%;
   /*overflow: hidden;*/
-  width: 99%;
+  width: 100%;
 }
 
 .icon {
@@ -208,7 +209,7 @@
 
 @keyframes move {
   0% {
-    top: -234%;
+    top: -300%;
     opacity: 0;
   }
 
@@ -224,7 +225,7 @@
   }
 
   100% {
-    top: -209%;
+    top: -275%;
     opacity: 1;
   }
 }
@@ -236,7 +237,7 @@
 
 @keyframes move2 {
   0% {
-    top: -350%;
+    top: -370%;
     opacity: 0;
   }
 
@@ -252,7 +253,7 @@
   }
 
   100% {
-    top: -320%;
+    top: -340%;
     opacity: 1;
   }
 }
@@ -264,6 +265,7 @@ i {
 .shirt-info {
   margin: 0 auto;
   overflow: hidden;
+  padding-bottom: 5%;
   width: 100%;
 }
 
@@ -279,4 +281,18 @@ i {
   margin-top: 2%;
   margin-right: 5%;
   font-weight: bold;
+}
+
+#yellow-square {
+  color: #ddac69;
+}
+
+#pink-square {
+  color: #e16fa3;
+}
+
+@media screen and (max-width: 1200px) {
+    .shirt-container {
+      float: none;
+    }
 }
