@@ -63,6 +63,7 @@
   height: 200%;
   margin: 0 -5%;
   opacity: 0;
+  padding: 5%;
   position: relative;
   top: -275%;
   width: 110%;
@@ -115,18 +116,22 @@
   text-align: right;
 }
 
+#blue:hover, #orange:hover, #pink:hover, #green:hover {
+  background-color: #dfdfdf;
+}
+
 .arrow_box2 {
 	background: #fff;
 	border: 2px solid #74bdea;
   float: right;
-  height: 260%;
+  height: 450%;
   margin: 0 -5%;
   opacity: 0;
   padding-top: 2%;
   position: relative;
-  top: -338%;
+  top: -525%;
   width: 110%;
-  z-index: 10;
+  /*z-index: 10;*/
 }
 
 .arrow_box2:after, .arrow_box2:before {
@@ -156,10 +161,6 @@
 	margin-left: -18px;
 }
 
-.arrow_box2 img {
-  display: block;
-  margin: 10% auto;
-}
 
 .shirt-menu {
   background: #fff;
@@ -177,13 +178,19 @@
   font-weight: bold;
   height: 100%;
   margin-right: -1%;
-  /*overflow: hidden;*/
   text-align: center;
   width: 20%;
 }
 
-#size-selector {
-  margin: 15% auto 0 auto;
+#size-selector, #sub-size-selector  {
+  color: #74bdea;
+  display: block;
+  text-align: center;
+}
+
+#sub-size-selector:hover {
+  background-color: #efefef;
+  color: #74bdea;
 }
 
 .icon:nth-child(-n+3):hover {
@@ -191,10 +198,39 @@
   color: white;
 }
 
-.icon:nth-child(5):hover {
+.icon:nth-child(3):hover > #size-selector{
   background-color: #74bdea;
   color: white;
 }
+
+.icon:nth-child(3):hover > .arrow_box2{
+  animation: move2 .5s ease;
+  opacity: 1;
+}
+
+@keyframes move2 {
+  0% {
+    top: -570%;
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.3;
+  }
+
+  50% {
+    opacity: 0.6;
+  }
+  75% {
+    opacity: 0.9;
+  }
+
+  100% {
+    top: -525%;
+    opacity: 1;
+  }
+}
+
 
 .icon:nth-child(4):hover {
   background-color: #74bdea;
@@ -229,32 +265,10 @@
   }
 }
 
-.icon:nth-child(3):hover > .arrow_box2{
-  animation: move2 .5s ease;
-  opacity: 1;
-}
 
-@keyframes move2 {
-  0% {
-    top: -370%;
-    opacity: 0;
-  }
-
-  25% {
-    opacity: 0.3;
-  }
-
-  50% {
-    opacity: 0.6;
-  }
-  75% {
-    opacity: 0.9;
-  }
-
-  100% {
-    top: -340%;
-    opacity: 1;
-  }
+.icon:nth-child(5):hover {
+  background-color: #74bdea;
+  color: white;
 }
 
 i {
