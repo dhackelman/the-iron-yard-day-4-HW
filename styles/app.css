@@ -182,9 +182,8 @@
   width: 20%;
 }
 
-.xl {
-  color: #74bdea;
-  text-align: center;
+#size-selector {
+  margin: 15% auto 0 auto;
 }
 
 .icon:nth-child(-n+3):hover {
